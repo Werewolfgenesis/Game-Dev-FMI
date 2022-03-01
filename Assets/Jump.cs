@@ -23,17 +23,17 @@ public class Jump : MonoBehaviour
             if (Input.GetKey(KeyCode.UpArrow))
             {
                 float jumpVelocity = 10f;
-                this.rb.velocity = Vector2.up * jumpVelocity;;
+                this.rb.velocity = Vector2.up * jumpVelocity; 
             }
         }
         //check for the input key
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            this.transform.Translate(-0.07f, 0, 0);
+            this.transform.Translate(-0.04f, 0, 0);
         }
         else if (Input.GetKey(KeyCode.RightArrow))
         {
-            this.transform.Translate(0.07f, 0, 0);
+            this.transform.Translate(0.04f, 0, 0);
         }
         //check if the player has dropped out of the bar
         if (this.transform.position.y < -2)

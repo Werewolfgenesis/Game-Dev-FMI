@@ -15,7 +15,7 @@ public class BrickFall : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
-        Invoke("Fall", 1.5f);
+        Invoke("Fall", 1.25f);
         Destroy(gameObject, 2f);
     }
 
